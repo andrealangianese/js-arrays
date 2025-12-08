@@ -10,13 +10,31 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = null;
+const reversedTeachers = teachers.reverse();
+console.log(reversedTeachers);
+
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
+let longNames = [];
+//prima estraggo l'indice
+for (let i = 0; i < teachers.length; i++ ) {
+  //creo la costante che raccolga l'indice da riutilizzare
+  const indexNames =teachers[i];
+  //controllo che abbiano almeno 5 lettere i nomi
+  if (indexNames.length >= 5){
+    //dopo che ho controllato se hanno più di 5 lettere li pusho nell'array
+    longNames.push(indexNames);
+  }
+}
+
+console.log(longNames);
+
 
 // 3. Rimuovi 'Ed' dall'array teachers
+const noEd = teachers[1]
+console.log(noEd);
+
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
